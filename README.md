@@ -21,7 +21,7 @@ Prerequisites
 - Docker Desktop installed
 - At least 16GB RAM available
 
-SetUp Instructions
+SetUp Instructions (From Local Machine)
 1. Increase the WSL2 VM Resource Limits
    ```text
    - Add/ Edit the .wslconfig file: C:\Users\<your-username>\.wslconfig
@@ -39,6 +39,11 @@ SetUp Instructions
 
 5. Access Jupyter at http://localhost:8888
    (Token will be displayed in terminal)
+
+SetUp Instructions (From Github Repo) - The Docker Image can be found under the Packages Section
+1. Run on Terminal: docker pull ghcr.io/zainabgawai/dubai-property-price-prediction:latest
+2. Then Run: docker run -p 8888:8888 ghcr.io/zainabgawai/dubai-property-price-prediction:latest
+3. On yor browser, go to: http://localhost:8888 (Token will be displayed in terminal)
 
 Project Structure
 ```text
